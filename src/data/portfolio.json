@@ -1,0 +1,430 @@
+[
+  {
+    "name": "Educational Opportunity Project",
+    "summary": "",
+    "client": "Stanford University",
+    "start": "2018-12-01",
+    "end": "2019-10-01",
+    "type": [ "Data Visualization", "Website" ],
+    "tasks": [ 
+      "UI Design",
+      "Information Design",
+      "User Testing",
+      "Prototype Development",
+      "Front-End Development",
+      "Back-End Development",
+      "Documentation",
+      "SEO",
+      "Data Processing",
+      "Analytics",
+      "Project Management"
+    ],
+    "technologies": [
+      "Google Analytics",
+      "Google Tag Manager",
+      "Google Search Console",
+      "Hugo",
+      "Algolia",
+      "Mapbox",
+      "React",
+      "Redux",
+      "Material UI",
+      "E-charts",
+      "D3",
+      "Atomic Design",
+      "HTML5",
+      "CSS",
+      "SVG",
+      "WCAG",
+      "Sentry",
+      "AWS CloudFront",
+      "AWS Elastic Container Service",
+      "AWS Lambda",
+      "Docker",
+      "git",
+      "GitHub",
+      "Notion",
+      "Node",
+      "npm",
+      "python",
+      "Pandas",
+      "Tippecanoe",
+      "GNU Make",
+      "csvkit",
+      "puppeteer",
+      "Vector Tiles",
+      "GeoJSON",
+      "Figma",
+      "Sketch",
+    ]
+  },
+  {
+    "name": "Blockchain Case Commons",
+    "summary": "",
+    "client": "Blockchain Research Institute",
+    "start": "2018-12-01",
+    "end": "2019-04-01",
+    "type": [ "Web Application", "Social Platform" ],
+    "tasks": [ 
+      "UI Design",
+      "Front-End Development",
+      "Back-End Development",
+      "Documentation",
+      "Project Management"
+    ],
+    "technologies": [
+      "React",
+      "Redux",
+      "Material UI",
+      "Firebase",
+      "Google Safe Browsing API",
+      "HTML5",
+      "CSS",
+      "git",
+      "Bitbucket",
+      "Node",
+      "npm",
+      "Figma",
+      "Browserstack",
+      "Travis CI"
+    ]
+  },
+  {
+    "name": "Eviction Lab",
+    "summary": "",
+    "client": "Princeton University",
+    "start": "2017-08-15",
+    "end": "2018-04-01",
+    "type": [ "Data Visualization", "Website" ],
+    "tasks": [ 
+      "Front-End Development",
+      "Back-End Development",
+      "Documentation",
+      "Data Processing",
+      "Analytics",
+      "Project Management"
+    ],
+    "technologies": [
+      "Google Analytics",
+      "Google Tag Manager",
+      "Hugo",
+      "Mapbox",
+      "Angular",
+      "Bootstrap",
+      "D3",
+      "HTML5",
+      "CSS",
+      "SVG",
+      "WCAG",
+      "Sentry",
+      "AWS CloudFront",
+      "AWS Lambda",
+      "Docker",
+      "git",
+      "GitHub",
+      "Node",
+      "npm",
+      "python",
+      "Pandas",
+      "Tippecanoe",
+      "GNU Make",
+      "csvkit",
+      "Karma",
+      "Vector Tiles",
+      "GeoJSON",
+      "Sketch",
+      "InVision",
+      "BrowserStack",
+      "Travis CI",
+      "Netlify"
+    ]
+  },
+  {
+    "name": "Speak English Professionally",
+    "summary": "",
+    "client": "Georgia Institute of Technology",
+    "start": "2017-09-01",
+    "end": "2018-03-01",
+    "type": [ "iOS App", "Android App" ],
+    "tasks": [ 
+      "Front-End Development",
+      "Mobile App Development",
+      "User Testing",
+      "Documentation",
+      "Analytics",
+      "Project Management"
+    ],
+    "technologies": [
+      "Google Analytics",
+      "Angular",
+      "Ionic",
+      "Material Design",
+      "HTML5",
+      "CSS",
+      "SVG",
+      "AWS CloudFront",
+      "git",
+      "Bitbucket",
+      "Cordova"
+    ]
+  },
+  {
+    "name": "Art Gallery Speaker Booth",
+    "summary": "",
+    "client": "Alberta Art Gallery",
+    "start": "2016-09-01",
+    "end": "2017-07-01",
+    "type": [ "iOS App" ],
+    "tasks": [ 
+      "Front-End Development",
+      "Mobile App Development",
+      "Analytics",
+      "Project Management"
+    ],
+    "technologies": [
+      "YouTube API",
+      "Angular",
+      "Ionic",
+      "HTML5",
+      "CSS",
+      "SVG",
+      "git",
+      "Bitbucket",
+      "Cordova"
+    ]
+  },
+  {
+    "name": "Mastering Spectroscopy",
+    "summary": "",
+    "client": "University of Alberta",
+    "start": "2016-09-01",
+    "end": "2017-07-01",
+    "type": [ "iOS App", "Android App" ],
+    "tasks": [ 
+      "Front-End Development",
+      "Mobile App Development",
+      "User Testing",
+      "Documentation",
+      "Analytics",
+      "Project Management"
+    ],
+    "technologies": [
+      "Google Analytics",
+      "Angular",
+      "Ionic",
+      "D3",
+      "Material Design",
+      "HTML5",
+      "CSS",
+      "SVG",
+      "AWS CloudFront",
+      "git",
+      "Bitbucket",
+      "Cordova"
+    ]
+  },
+  {
+    "name": "Mountains 101: Identification",
+    "summary": "",
+    "client": "University of Alberta",
+    "start": "2016-09-01",
+    "end": "2017-07-01",
+    "type": [ "Web Application", "Interactive Learning" ],
+    "tasks": [ 
+      "UI Design",
+      "Wireframing",
+      "User Prototypes",
+      "Front-End Development"
+    ],
+    "technologies": [
+      "Google Analytics",
+      "Angular",
+      "Material Design",
+      "HTML5",
+      "CSS",
+      "SVG",
+      "AWS CloudFront",
+      "git",
+      "Bitbucket",
+      "Mapbox",
+      "CesiumJS",
+      "GeoJSON"
+    ]
+  },
+  {
+    "name": "Indigenous Canada: Painting",
+    "summary": "",
+    "client": "University of Alberta",
+    "start": "2016-09-01",
+    "end": "2017-07-01",
+    "type": [ "Web Application", "Interactive Learning" ],
+    "tasks": [ 
+      "UI Design",
+      "Wireframing",
+      "Front-End Development"
+    ],
+    "technologies": [
+      "Google Analytics",
+      "Angular",
+      "Material Design",
+      "HTML5",
+      "CSS",
+      "SVG",
+      "AWS CloudFront",
+      "git",
+      "Bitbucket",
+      "Mapbox",
+    ]
+  },
+  {
+    "name": "Indigenous Canada: Residential Schools",
+    "summary": "",
+    "client": "University of Alberta",
+    "start": "2016-09-01",
+    "end": "2017-07-01",
+    "type": [ "Web Application", "Interactive Learning" ],
+    "tasks": [ 
+      "UI Design",
+      "Wireframing",
+      "User Prototypes",
+      "Front-End Development",
+      "GeoJSON"
+    ],
+    "technologies": [
+      "Angular",
+      "Material Design",
+      "HTML5",
+      "CSS",
+      "SVG",
+      "AWS CloudFront",
+      "git",
+      "Bitbucket",
+      "Mapbox",
+      "GeoJSON"
+    ]
+  },
+  {
+    "name": "Planhandler",
+    "summary": "",
+    "client": "Onlea",
+    "start": "2016-09-01",
+    "end": "2017-07-01",
+    "type": [ "Web Application", "Interactive Learning" ],
+    "tasks": [ 
+      "UI Design",
+      "Wireframing",
+      "User Prototypes",
+      "Front-End Development",
+      "GeoJSON"
+    ],
+    "technologies": [
+      "Angular",
+      "Material Design",
+      "HTML5",
+      "CSS",
+      "SVG",
+      "AWS CloudFront",
+      "git",
+      "Bitbucket",
+      "Mapbox",
+      "GeoJSON"
+    ]
+  },
+  {
+    "name": "Software Project Management: Interview",
+    "summary": "",
+    "client": "University of Alberta",
+    "start": "2016-09-01",
+    "end": "2017-07-01",
+    "type": [ "Web Application", "Interactive Learning" ],
+    "tasks": [ 
+      "UI Design",
+      "Wireframing",
+      "User Prototypes",
+      "Front-End Development",
+      "GeoJSON"
+    ],
+    "technologies": [
+      "Angular",
+      "Material Design",
+      "HTML5",
+      "CSS",
+      "SVG",
+      "AWS CloudFront",
+      "git",
+      "Bitbucket",
+      "Mapbox",
+      "GeoJSON"
+    ]
+  },
+  {
+    "name": "Phylogenetic Tree",
+    "summary": "",
+    "client": "University of Alberta",
+    "start": "2016-09-01",
+    "end": "2017-07-01",
+    "type": [ "Web Application", "Interactive Learning" ],
+    "tasks": [ 
+
+    ],
+    "technologies": [
+      "D3",
+    ]
+  },
+  {
+    "name": "Dino 101: Mobile App",
+    "summary": "",
+    "client": "University of Alberta",
+    "start": "2016-09-01",
+    "end": "2017-07-01",
+    "type": [ "Web Application", "Interactive Learning" ],
+    "tasks": [ 
+
+    ],
+    "technologies": [
+      "three.js",
+    ]
+  },
+  {
+    "name": "Dino 101: Geologic Timescale",
+    "summary": "",
+    "client": "University of Alberta",
+    "start": "2016-09-01",
+    "end": "2017-07-01",
+    "type": [ "Web Application", "Interactive Learning" ],
+    "tasks": [ 
+
+    ],
+    "technologies": [
+      "D3",
+    ]
+  },
+  {
+    "name": "Dino 101: Dinosaur Puzzles",
+    "summary": "",
+    "client": "University of Alberta",
+    "start": "2016-09-01",
+    "end": "2017-07-01",
+    "type": [ "Web Application", "Interactive Learning" ],
+    "tasks": [ 
+
+    ],
+    "technologies": [
+      "D3",
+    ]
+  },
+  {
+    "name": "University of Alberta Website",
+    "summary": "",
+    "client": "University of Alberta",
+    "start": "2016-09-01",
+    "end": "2017-07-01",
+    "type": [ "Web Application", "Interactive Learning" ],
+    "tasks": [ 
+
+    ],
+    "technologies": [
+      "D3",
+    ]
+  },
+]

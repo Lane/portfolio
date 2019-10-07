@@ -1,0 +1,22 @@
+:root {
+  --background: #fff;
+  --primary: #eee;
+  --secondary: #ddd;
+  --text: #000;
+  --alt-text: #666;
+  --link: #06f;
+  --padding: 1rem;
+  --margin: 1.5rem;
+  --unit: 0.5rem;
+
+  --font: "Roboto", sans-serif;
+  --font-heading: "Domine", serif;
+  --font-condensed: "Roboto Condensed", sans-serif;
+
+  --col1: 38.2%;
+  --col2: 61.8%;
+
+  --section-margin: 40px;
+
+  --header-height: 5rem;
+}

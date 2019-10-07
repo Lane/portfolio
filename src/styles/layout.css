@@ -1,0 +1,24 @@
+
+.page {
+  margin: auto;
+  width: 100%;
+  height:100%;
+  position: relative;
+  min-height: 100vh;
+  overflow:hidden;
+}
+
+.page .page__header {
+  position: relative;
+  height: var(--header-height);
+}
+
+.page__main {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  position: absolute;
+  overflow: hidden;
+}
+
+.page__footer {}

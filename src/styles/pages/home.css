@@ -1,0 +1,26 @@
+.home .section {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  min-height: 0;
+}
+
+
+.home .technologies {}
+
+@media(max-width: 768px) {
+  .home .technologies .list {
+    list-style: none;
+    margin:0 0 2rem;
+    padding:0;
+  }
+  .home .technologies .list li {
+    display: inline;
+  }
+  .home .technologies .list li:after {
+    content: ", "
+  }
+  .home .technologies .list li:last-child:after {
+    content: ""
+  }
+}

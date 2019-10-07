@@ -1,8 +1,14 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `lane olson`,
+    description: `Lane Olson is a designer and developer with a strong focus on user experience.`,
+    author: `@laneolson`,
+    socialMedia: [
+      { id: 'github', url: `https://www.github.com/Lane` },
+      { id: `codepen`, url: `https://www.codepen.io/Lane` },
+      { id: `linkedin`, url: `http://ca.linkedin.com/in/lanegolson` },
+      { id: `twitter`, url: `https://www.twitter.com/laneolson` },
+    ]
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -15,16 +21,29 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-transition-link`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Lane Olson's Portfolio`,
+        short_name: `laneolson.ca`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+      },
+    },
+    {
+      resolve: `gatsby-plugin-typography`,
+      options: {
+        pathToConfigModule: `src/utils/typography`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-emotion`,
+      options: {
+        // Accepts all options defined by `babel-plugin-emotion` plugin.
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

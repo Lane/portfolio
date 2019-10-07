@@ -1,0 +1,141 @@
+[
+  {
+    "name": "Accessibility",
+    "level": 10,
+    "children": [
+      { "name": "Semantic HTML" },
+      { "name": "Accessible Rich Internet Applications (ARIA)" },
+      { "name": "VoiceOver" },
+      { "name": "NVDA" },
+      { "name": "WCAG 2.1" }
+    ]
+  },
+  {
+    "name": "User Experience",
+    "level": 9,
+    "children": [
+      { "name": "Moderated User Testing" },
+      { "name": "User Surveys" },
+      { "name": "Prototyping" },
+      { "name": "InVision" },
+      { "name": "Usability Hub" },
+      { "name": "A/B Testing" },
+    ]
+  },
+  {
+    "name": "Javascript",
+    "level": 10,
+    "children": [
+      { "name": "React (w/ hooks)" },
+      { "name": "Redux" },
+      { "name": "Angular" },
+      { "name": "D3" },
+      { "name": "Ionic" },
+      { "name": "jQuery" },
+      { "name": "Node" },
+      { "name": "NPM" },
+      { "name": "Babel" },
+      { "name": "Webpack" },
+      { "name": "Gulp" },
+      { "name": "Mapbox GL" },
+      { "name": "Cordova" },
+      { "name": "Karma" },
+    ]
+  },
+  {
+    "name": "CSS",
+    "level": 10,
+    "children": [
+      { "name": "Flexbox" },
+      { "name": "CSS Grid" },
+      { "name": "Media Queries" },
+      { "name": "SASS" },
+      { "name": "LESS" },
+      { "name": "Stylus" },
+      { "name": "Emotion" },
+      { "name": "CSS Modules" },
+      { "name": "Bootstrap" },
+      { "name": "Foundation" },
+      { "name": "BEM" },
+      { "name": "OOCSS" },
+    ]
+  },
+  {
+    "name": "Data Processing",
+    "level": 7,
+    "children": [
+      { "name": "Python" },
+      { "name": "Pandas" },
+      { "name": "Numpy" },
+      { "name": "csvkit" },
+      { "name": "Bash scripting" },
+      { "name": "GNU Make" },
+      { "name": "GDAL" },
+      { "name": "Tippecanoe" },
+    ]
+  },
+  {
+    "name": "Infrastructure",
+    "level": 9,
+    "children": [
+      { "name": "Docker" },
+      { "name": "AWS (EC2, ECS, S3, CloudFront, Gateway, Lambda)" },
+      { "name": "Google App Engine " },
+      { "name": "Firebase" },
+      { "name": "Surge" },
+      { "name": "Heroku" },
+      { "name": "MySQL" },
+      { "name": "MongoDB" },
+    ]
+  },
+  {
+    "name": "CMS / Static Generators",
+    "level": 6,
+    "children": [
+      { "name": "Hugo" },
+      { "name": "Jekyll" },
+      { "name": "Gatsby" },
+      { "name": "Ghost" },
+      { "name": "Wordpress" },
+      { "name": "Netlify CMS" },
+    ]
+  },
+  {
+    "name": "Design Tools &amp; Guidelines",
+    "level": 8,
+    "children": [
+      { "name": "Figma" },
+      { "name": "Sketch" },
+      { "name": "Photoshop" },
+      { "name": "Atomic Design" },
+      { "name": "PatternLab" },
+      { "name": "Material Design" },
+      { "name": "Human Interface Guidelines" },
+    ]
+  },
+  {
+    "name": "Management",
+    "level": 6,
+    "children": [
+      { "name": "Notion" },
+      { "name": "Trello" },
+      { "name": "Github" },
+      { "name": "JIRA" },
+      { "name": "Confluence" },
+      { "name": "Basecamp" },
+      { "name": "Harvest" },
+      { "name": "G-Suite" },
+    ]
+  },
+  {
+    "name": "Monitoring &amp; Automation",
+    "level": 6,
+    "children": [
+      { "name": "Travis CI" },
+      { "name": "Puppeteer" },
+      { "name": "Browserstack" },
+      { "name": "IFTTT" },
+      { "name": "Splunk" },
+    ]
+  }
+]

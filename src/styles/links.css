@@ -1,0 +1,44 @@
+.links {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+}
+
+.links li {
+  margin-bottom:0;
+}
+
+/** Vertical Links */
+
+.links.links--vertical {
+  flex-direction: column;
+}
+
+.links.links--vertical li {
+  margin-bottom: 1rem;
+}
+
+/** Social Links */
+
+.links.links--social .link {
+  display: block;
+  padding: 8px;
+  background: transparent;
+  border-radius: 40px;
+  margin-left: 4px;
+  width: 40px;
+  height: 40px;
+  display:flex;
+  align-items:center;
+  justify-content: center;
+}
+.links.links--social .link:hover {
+  background: rgba(255,255,255,0.1);
+}
+
+.links.links--social .icon {
+  width: 1.25rem;
+  height: 1.25rem;
+  fill: var(--alt-text);
+}
