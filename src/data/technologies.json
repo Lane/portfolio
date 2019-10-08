@@ -2,140 +2,140 @@
   {
     "name": "Accessibility",
     "level": 10,
-    "children": [
-      { "name": "Semantic HTML" },
-      { "name": "Accessible Rich Internet Applications (ARIA)" },
-      { "name": "VoiceOver" },
-      { "name": "NVDA" },
-      { "name": "WCAG 2.1" }
+    "items": [
+      "Semantic HTML",
+      "Accessible Rich Internet Applications (ARIA)",
+      "VoiceOver",
+      "NVDA",
+      "WCAG 2.1"
     ]
   },
   {
     "name": "User Experience",
     "level": 9,
-    "children": [
-      { "name": "Moderated User Testing" },
-      { "name": "User Surveys" },
-      { "name": "Prototyping" },
-      { "name": "InVision" },
-      { "name": "Usability Hub" },
-      { "name": "A/B Testing" },
+    "items": [
+      "Moderated User Testing",
+      "User Surveys",
+      "Prototyping",
+      "InVision",
+      "Usability Hub",
+      "A/B Testing"
     ]
   },
   {
     "name": "Javascript",
     "level": 10,
-    "children": [
-      { "name": "React (w/ hooks)" },
-      { "name": "Redux" },
-      { "name": "Angular" },
-      { "name": "D3" },
-      { "name": "Ionic" },
-      { "name": "jQuery" },
-      { "name": "Node" },
-      { "name": "NPM" },
-      { "name": "Babel" },
-      { "name": "Webpack" },
-      { "name": "Gulp" },
-      { "name": "Mapbox GL" },
-      { "name": "Cordova" },
-      { "name": "Karma" },
+    "items": [
+      "React (w/ hooks)",
+      "Redux",
+      "Angular",
+      "D3",
+      "Ionic",
+      "jQuery",
+      "Node",
+      "NPM",
+      "Babel",
+      "Webpack",
+      "Gulp",
+      "Mapbox GL",
+      "Cordova",
+      "Karma"
     ]
   },
   {
     "name": "CSS",
     "level": 10,
-    "children": [
-      { "name": "Flexbox" },
-      { "name": "CSS Grid" },
-      { "name": "Media Queries" },
-      { "name": "SASS" },
-      { "name": "LESS" },
-      { "name": "Stylus" },
-      { "name": "Emotion" },
-      { "name": "CSS Modules" },
-      { "name": "Bootstrap" },
-      { "name": "Foundation" },
-      { "name": "BEM" },
-      { "name": "OOCSS" },
+    "items": [
+      "Flexbox",
+      "CSS Grid",
+      "Media Queries",
+      "SASS",
+      "LESS",
+      "Stylus",
+      "Emotion",
+      "CSS Modules",
+      "Bootstrap",
+      "Foundation",
+      "BEM",
+      "OOCSS"
     ]
   },
   {
     "name": "Data Processing",
     "level": 7,
-    "children": [
-      { "name": "Python" },
-      { "name": "Pandas" },
-      { "name": "Numpy" },
-      { "name": "csvkit" },
-      { "name": "Bash scripting" },
-      { "name": "GNU Make" },
-      { "name": "GDAL" },
-      { "name": "Tippecanoe" },
+    "items": [
+      "Python",
+      "Pandas",
+      "Numpy",
+      "csvkit",
+      "Bash scripting",
+      "GNU Make",
+      "GDAL",
+      "Tippecanoe"
     ]
   },
   {
     "name": "Infrastructure",
     "level": 9,
-    "children": [
-      { "name": "Docker" },
-      { "name": "AWS (EC2, ECS, S3, CloudFront, Gateway, Lambda)" },
-      { "name": "Google App Engine " },
-      { "name": "Firebase" },
-      { "name": "Surge" },
-      { "name": "Heroku" },
-      { "name": "MySQL" },
-      { "name": "MongoDB" },
+    "items": [
+      "Docker",
+      "AWS (EC2, ECS, S3, CloudFront, Gateway, Lambda)",
+      "Google App Engine ",
+      "Firebase",
+      "Surge",
+      "Heroku",
+      "MySQL",
+      "MongoDB"
     ]
   },
   {
-    "name": "CMS / Static Generators",
+    "name": "CMS & Static Generators",
     "level": 6,
-    "children": [
-      { "name": "Hugo" },
-      { "name": "Jekyll" },
-      { "name": "Gatsby" },
-      { "name": "Ghost" },
-      { "name": "Wordpress" },
-      { "name": "Netlify CMS" },
+    "items": [
+      "Hugo",
+      "Jekyll",
+      "Gatsby",
+      "Ghost",
+      "Wordpress",
+      "Netlify CMS"
     ]
   },
   {
-    "name": "Design Tools &amp; Guidelines",
+    "name": "Design Tools & Guidelines",
     "level": 8,
-    "children": [
-      { "name": "Figma" },
-      { "name": "Sketch" },
-      { "name": "Photoshop" },
-      { "name": "Atomic Design" },
-      { "name": "PatternLab" },
-      { "name": "Material Design" },
-      { "name": "Human Interface Guidelines" },
+    "items": [
+      "Figma",
+      "Sketch",
+      "Photoshop",
+      "Atomic Design",
+      "PatternLab",
+      "Material Design",
+      "Human Interface Guidelines"
     ]
   },
   {
     "name": "Management",
     "level": 6,
-    "children": [
-      { "name": "Notion" },
-      { "name": "Trello" },
-      { "name": "Github" },
-      { "name": "JIRA" },
-      { "name": "Confluence" },
-      { "name": "Basecamp" },
-      { "name": "Harvest" },
-      { "name": "G-Suite" },
+    "items": [
+      "Notion",
+      "Trello",
+      "Github",
+      "JIRA",
+      "Confluence",
+      "Basecamp",
+      "Harvest",
+      "G-Suite"
     ]
   },
   {
-    "name": "Monitoring &amp; Automation",
+    "name": "Monitoring & Automation",
     "level": 6,
-    "children": [
-      { "name": "Travis CI" },
-      { "name": "Puppeteer" },
-      { "name": "Browserstack" },
-      { "name": "IFTTT" },
-      { "name": "Splunk" },
+    "items": [
+      "Travis CI",
+      "Puppeteer",
+      "Browserstack",
+      "IFTTT",
+      "Splunk"
     ]
   }
 ]
