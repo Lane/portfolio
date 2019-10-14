@@ -1,19 +1,18 @@
 import React from "react"
-import { TransitionState } from "gatsby-plugin-transition-link"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Hero from "../components/hero"
 import Section from "../components/section"
 import { Link } from "gatsby"
 import PageOverview from "../components/page-overview"
 import PageContent from "../components/page-content"
+import Block from "../components/block"
 
 // product developer, interface designer, team leader
 
 const IndexPage = (props) => (
   <Layout className="home">
-    <SEO title="Home" />
+    <SEO title="home" />
     <Section 
       className="about" 
     >
@@ -28,9 +27,9 @@ const IndexPage = (props) => (
       <div className="section__right">
 
         <PageContent transitionStatus={props.transitionStatus}>
-          <div className="block">
+          <Block id="home">
             <p className="text bigger">I create accessible applications, <br />user interfaces, and design systems.</p>
-            <p className="text small">But that is only the beginning, take a look:</p>
+            <p className="text small">...but also, so much more! Take a look:</p>
             <ul className="list">
               <li>
                 <Link to="/what-i-do">Read about <strong>what I do</strong> and how I can help with your project</Link>
@@ -42,7 +41,7 @@ const IndexPage = (props) => (
                 <Link to="/technologies">View the <strong>technologies</strong> and processes I use in my work</Link>
               </li>
             </ul>
-          </div>
+          </Block>
         </PageContent>
       </div>    
     </Section>

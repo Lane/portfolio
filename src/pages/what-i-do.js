@@ -1,24 +1,25 @@
-import React from "react"
+import React, { useState } from "react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Hero from "../components/hero"
 import Section from "../components/section"
-import { Link } from "gatsby"
 import PageOverview from "../components/page-overview"
 import PageContent from "../components/page-content"
+import Block from "../components/block"
 
 // product developer, interface designer, team leader
 
 const WhatIDoPage = ({transitionStatus}) => {
+  const [activeBlock, setActiveBlock] = useState('design')
   return (
     <Layout className="page--what-i-do">
-      <SEO title="What I Do" />
+      <SEO title="what i do" />
       <Section className="what-i-do">
         <div className="section__left">
           <PageOverview
             title="what i do"
-            items={['design', 'development', 'management', 'leadership' ]}
+            items={['design', 'development', 'management', 'consulting' ]}
+            active={activeBlock}
             transitionStatus={transitionStatus}
           />
         </div>
@@ -26,7 +27,11 @@ const WhatIDoPage = ({transitionStatus}) => {
           <div className="section__shade"></div>
 
           <PageContent transitionStatus={transitionStatus}>
-            <div className="block">
+            <Block 
+              enterOffset={0}
+              onEnter={() => setActiveBlock('design')} 
+              id="design"
+            >
               <h2>visual, ux, and interaction design</h2>
               <p>
                 My design approach goes further than how a product looks.  
@@ -39,9 +44,12 @@ const WhatIDoPage = ({transitionStatus}) => {
                 <li>mindfully use color, typography, layout, and movement to craft memorable experiences</li>
                 <li>provide style guides and design systems for teams to use that elevate a cohesive brand for years to come</li>
               </ul>
-            </div>
+            </Block>
 
-            <div className="block">
+            <Block 
+              id="development"
+              onEnter={() => setActiveBlock('development')} 
+            >
               <h2>full stack development</h2>
               <p>
                 My design approach goes further than how a product looks.  
@@ -54,9 +62,12 @@ const WhatIDoPage = ({transitionStatus}) => {
                 <li>mindfully use color, typography, layout, and movement to craft memorable experiences</li>
                 <li>provide style guides and design systems for teams to use that elevate a cohesive brand for years to come</li>
               </ul>
-            </div>
+            </Block>
 
-            <div className="block">
+            <Block 
+              id="management"
+              onEnter={() => setActiveBlock('management')} 
+            >
               <h2>task and team management</h2>
               <p>
                 My design approach goes further than how a product looks.  
@@ -69,10 +80,13 @@ const WhatIDoPage = ({transitionStatus}) => {
                 <li>mindfully use color, typography, layout, and movement to craft memorable experiences</li>
                 <li>provide style guides and design systems for teams to use that elevate a cohesive brand for years to come</li>
               </ul>
-            </div>
+            </Block>
 
-            <div className="block">
-              <h2>leadership</h2>
+            <Block 
+              id="consulting"
+              onEnter={() => setActiveBlock('consulting')} 
+            >
+              <h2>consulting</h2>
               <p>
                 My design approach goes further than how a product looks.  
                 To me, how it works is just as important as how it looks, 
@@ -84,7 +98,7 @@ const WhatIDoPage = ({transitionStatus}) => {
                 <li>mindfully use color, typography, layout, and movement to craft memorable experiences</li>
                 <li>provide style guides and design systems for teams to use that elevate a cohesive brand for years to come</li>
               </ul>
-            </div>
+            </Block>
           </PageContent>
         </div>
       </Section>

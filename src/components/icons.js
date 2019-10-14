@@ -14,6 +14,14 @@ const Icon = ({ className, children, viewBox="0 0 24 24", ...rest }) => {
   )
 }
 
+export const MarkerIcon = props => {
+  return (
+    <Icon viewBox="0 0 7 12">
+      <path d="M2.12908 6.00012L0.585938 0.343262L6.24279 6.00012L0.585938 11.657L2.12908 6.00012Z" fill="black"/>
+    </Icon>
+  )
+}
+
 const GithubIcon = props => {
   return (
     <Icon {...props}>

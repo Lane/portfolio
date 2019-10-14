@@ -49,11 +49,11 @@ const Header = ({ siteTitle, socialMedia, className }) => {
             <TransitionLink 
               className="link" 
               activeClassName="link--active" 
-              to="/technologies"
+              to="/hire-me"
               entry={{delay:0.5}}
               exit={{length: 1}}
             >
-              technologies
+              Hire me!
             </TransitionLink>
           </li>
         </ul>

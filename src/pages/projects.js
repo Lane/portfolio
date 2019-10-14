@@ -1,38 +1,55 @@
-import React from "react"
+import React, { useState } from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Section from "../components/section"
 import PageOverview from "../components/page-overview"
 import PageContent from "../components/page-content"
+import Block from "../components/block"
+import slugify from 'slugify';
 
 const ProjectsPage = ({transitionStatus, data}) => {
-  const itemNames = data.allPortfolioJson.edges.map(
-    (n) => n.node.name
+  
+  const items = data.allPortfolioJson.edges.map(
+    (n) => Object.assign(
+      { slug: slugify(n.node.name, { lower: true }) }, 
+      n.node
+    )
   )
+
+  const itemNames = items.map(
+    (n) => n.name
+  )
+
+  const [active, setActive] = useState(itemNames[0])
+
   return (
     <Layout className="page--projects">
-      <SEO title="Projects" />
+      <SEO title="projects" />
       <Section className="projects">
         <div className="section__left">
           <PageOverview
             title="projects"
             items={itemNames}
+            active={active}
             transitionStatus={transitionStatus}
           />
         </div>
         <div className="section__right">
           <div className="section__shade"></div>
           <PageContent transitionStatus={transitionStatus}>
-            <div className="block">
-              <h2>project name</h2>
-              <p>
-                My design approach goes further than how a product looks.  
-                To me, how it works is just as important as how it looks, 
-                so in each project I strive to:
-              </p>
-              
-            </div>
+            {
+              items.map((item, i) => 
+                <Block
+                  key={i}
+                  id={item.slug}
+                  onEnter={() => setActive(item.name) }
+                >
+                  <h2>{item.name}</h2>
+                  <p>{item.summary}</p>
+                </Block>
+              )
+            }
           </PageContent>
         </div>
       </Section>
@@ -44,10 +61,17 @@ export default ProjectsPage
 
 export const query = graphql`
   query {
-    allPortfolioJson {
+    allPortfolioJson(filter: {featured: {eq: true}}) {
       edges {
         node {
+          client
+          end
           name
+          start
+          summary
+          tasks
+          technologies
+          type
         }
       }
     }

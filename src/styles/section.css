@@ -18,7 +18,7 @@
   margin:auto;
   display: flex;
   height: 100%;
-  
+  flex-direction: column;
 }
 
 .section__shade {
@@ -29,64 +29,78 @@
   height: 72px;
   background: linear-gradient(30deg, rgba(255,255,2555,0.1) , #fff 56%);
   z-index: 1000;
+  background-size: 900px 72px;
+  background-position: top right;
+  background-repeat: no-repeat;
 }
 
-.section__left {
+.section .section__left {
+  position:relative;
   width: var(--col1);
   padding: var(--section-margin);
-  text-align: right;
   background: #f6f6f6;
-  position:absolute;
-  left:0;
-  top:0;
-  bottom: 0;
-  z-index: 10;
   display: flex;
-  align-items: flex-start;
-  justify-content: flex-end;
 }
+
+@media(min-width: 840px) {
+  .section .section__left {
+    align-items: flex-start;
+    justify-content: flex-end;
+    text-align: right;
+    position: fixed;
+    left:0;
+    top:0;
+    bottom: 0;
+    z-index: 10;
+    
+  }
+}
+
 
 .section__left .list,
 .section__left .links {
   list-style: none;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-family: "Roboto Condensed", sans-serif;
   text-transform: uppercase; 
 }
 
-.section__right {
-  width: 100%;
-  padding: var(--section-margin);
-  padding-left: calc(var(--col1) + var(--section-margin));
-  overflow:auto;
-
-}
-
 .section .section__right {
-  position:absolute;
-  right:0;
-  top:0;
-  bottom: 0;
+  position:relative;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
+  width: 100%;
+  padding: var(--section-margin);
 }
 
-.section .page-content,
-.section .page-overview {
-  position: relative;
-  top: 50%;
-  min-height: 300px;
-  margin-top: -120px;
+@media(min-width: 840px) {
+  .section .section__right {
+    position:absolute;
+    right:0;
+    top:0;
+    bottom: 0;
+    padding-left: calc(var(--col1) + var(--section-margin));
+  }
 }
+
+@media(min-width: 840px) {
+  .section .page-content,
+  .section .page-overview {
+    position: relative;
+    margin-top: 33vh;
+  }
+}
+
 
 .section .section__right .page-content {
-  padding-top: 8px;
+  padding-top: 0.6rem;
+  max-width: var(--col2-max);
 }
 
 .section .section__right .list {
-  font-size: 18px;
+  font-size: 1.125rem;
 }
 
 .section .section__right .big {
@@ -103,8 +117,9 @@
 
 .section__right .block {
   margin-top: 120px;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 300;
+  min-height: 41vh;
 }
 
 .section__right .block:last-child {

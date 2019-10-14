@@ -2,6 +2,7 @@
   {
     "name": "Educational Opportunity Project",
     "summary": "",
+    "featured": true,
     "client": "Stanford University",
     "start": "2018-12-01",
     "end": "2019-10-01",
@@ -92,6 +93,7 @@
   {
     "name": "Eviction Lab",
     "summary": "",
+    "featured": true,
     "client": "Princeton University",
     "start": "2017-08-15",
     "end": "2018-04-01",
@@ -174,7 +176,7 @@
     "client": "Alberta Art Gallery",
     "start": "2016-09-01",
     "end": "2017-07-01",
-    "type": [ "iOS App" ],
+    "type": [ "iOS App", "Mobile App" ],
     "tasks": [ 
       "Front-End Development",
       "Mobile App Development",
@@ -199,7 +201,7 @@
     "client": "University of Alberta",
     "start": "2016-09-01",
     "end": "2017-07-01",
-    "type": [ "iOS App", "Android App" ],
+    "type": [ "iOS App", "Android App", "Mobile App" ],
     "tasks": [ 
       "Front-End Development",
       "Mobile App Development",
@@ -224,7 +226,7 @@
     ]
   },
   {
-    "name": "Mountains 101: Identification",
+    "name": "Mountains 101",
     "summary": "",
     "client": "University of Alberta",
     "start": "2016-09-01",
@@ -252,8 +254,9 @@
     ]
   },
   {
-    "name": "Indigenous Canada: Painting",
+    "name": "Indigenous Canada",
     "summary": "",
+    "featured": true,
     "client": "University of Alberta",
     "start": "2016-09-01",
     "end": "2017-07-01",
@@ -265,32 +268,6 @@
     ],
     "technologies": [
       "Google Analytics",
-      "Angular",
-      "Material Design",
-      "HTML5",
-      "CSS",
-      "SVG",
-      "AWS CloudFront",
-      "git",
-      "Bitbucket",
-      "Mapbox"
-    ]
-  },
-  {
-    "name": "Indigenous Canada: Residential Schools",
-    "summary": "",
-    "client": "University of Alberta",
-    "start": "2016-09-01",
-    "end": "2017-07-01",
-    "type": [ "Web Application", "Interactive Learning" ],
-    "tasks": [ 
-      "UI Design",
-      "Wireframing",
-      "User Prototypes",
-      "Front-End Development",
-      "GeoJSON"
-    ],
-    "technologies": [
       "Angular",
       "Material Design",
       "HTML5",
@@ -331,7 +308,7 @@
     ]
   },
   {
-    "name": "Software Project Management: Interview",
+    "name": "Software Project Management",
     "summary": "",
     "client": "University of Alberta",
     "start": "2016-09-01",
@@ -358,50 +335,9 @@
     ]
   },
   {
-    "name": "Phylogenetic Tree",
+    "name": "Dino 101",
     "summary": "",
-    "client": "University of Alberta",
-    "start": "2016-09-01",
-    "end": "2017-07-01",
-    "type": [ "Web Application", "Interactive Learning" ],
-    "tasks": [ 
-
-    ],
-    "technologies": [
-      "D3"
-    ]
-  },
-  {
-    "name": "Dino 101: Mobile App",
-    "summary": "",
-    "client": "University of Alberta",
-    "start": "2016-09-01",
-    "end": "2017-07-01",
-    "type": [ "Web Application", "Interactive Learning" ],
-    "tasks": [ 
-
-    ],
-    "technologies": [
-      "three.js"
-    ]
-  },
-  {
-    "name": "Dino 101: Geologic Timescale",
-    "summary": "",
-    "client": "University of Alberta",
-    "start": "2016-09-01",
-    "end": "2017-07-01",
-    "type": [ "Web Application", "Interactive Learning" ],
-    "tasks": [ 
-
-    ],
-    "technologies": [
-      "D3"
-    ]
-  },
-  {
-    "name": "Dino 101: Dinosaur Puzzles",
-    "summary": "",
+    "featured": true,
     "client": "University of Alberta",
     "start": "2016-09-01",
     "end": "2017-07-01",
@@ -415,11 +351,16 @@
   },
   {
     "name": "University of Alberta Website",
+    "featured": true,
     "summary": "",
     "client": "University of Alberta",
     "start": "2016-09-01",
     "end": "2017-07-01",
-    "type": [ "Web Application", "Interactive Learning" ],
+    "type": [ 
+      "Mobile Application", 
+      "Web Application", 
+      "Interactive Learning" 
+    ],
     "tasks": [ 
 
     ],

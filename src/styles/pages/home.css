@@ -5,6 +5,30 @@
   min-height: 0;
 }
 
+.home .list a {
+  text-decoration: none;
+  color: var(--text);
+}
+
+.home .list a strong {
+  border-bottom: 2px solid var(--secondary);
+}
+
+.home .list a:hover strong {
+  color: var(--link);
+}
+
+.home .text.bigger {
+  max-width: 33rem;
+}
+
+@media(min-width: 960px) {
+  .home .text.bigger br {
+    display: none;
+  }
+}
+
+
 
 .home .technologies {}
 

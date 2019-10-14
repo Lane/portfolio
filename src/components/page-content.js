@@ -35,7 +35,7 @@ const PageContent = ({children, transitionStatus}) => {
 }
 
 PageContent.propTypes = {
-
+  transitionStatus: PropTypes.string,
 }
 
 export default PageContent

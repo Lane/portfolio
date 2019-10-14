@@ -13,10 +13,42 @@
   --font-heading: "Domine", serif;
   --font-condensed: "Roboto Condensed", sans-serif;
 
-  --col1: 38.2%;
-  --col2: 61.8%;
+  --col1: 100%;
+  --col2: 100%;
+  --content-max: 920px;
 
-  --section-margin: 40px;
+  --section-margin: 16px;
 
   --header-height: 5rem;
+}
+
+@media(min-width: 840px) {
+  :root {
+    --col1: 33.333%;
+    --col2: 66.6666%;
+    --content-max: 920px;
+    --section-margin: 40px;
+    --header-height: 5rem;
+  }
+}
+
+/** 
+ * set widths based on container max width of 880px
+ * centered on page.
+ */
+@media(min-width: 1080px) {
+  :root {
+    --content-max: 920px;
+    --col1-max: calc(0.25 * var(--content-max));
+    --col2-max: calc(0.75 * var(--content-max));
+    --col1: calc(50% - ((0.5 * var(--content-max)) - var(--col1-max)));
+    --col2: calc(50% - ((0.5 * var(--content-max)) - var(--col2-max)));
+    
+  }
+}
+
+@media(min-width: 1200px) {
+  html {
+    font: 112.5%/1.5 'Roboto',sans-serif;
+  }
 }
