@@ -14,7 +14,7 @@ const WhatIDoPage = ({transitionStatus}) => {
   return (
     <Layout className="page--what-i-do">
       <SEO title="what i do" />
-      <Section className="what-i-do">
+      <Section>
         <div className="section__left">
           <PageOverview
             title="what i do"

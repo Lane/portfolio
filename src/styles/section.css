@@ -99,10 +99,6 @@
   max-width: var(--col2-max);
 }
 
-.section .section__right .list {
-  font-size: 1.125rem;
-}
-
 .section .section__right .big {
   margin-bottom: 24px;
 }

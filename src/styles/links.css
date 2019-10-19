@@ -1,3 +1,53 @@
+.list {
+
+}
+
+
+.list.list--inline {
+  list-style: none;
+  margin:0;
+  padding:0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.list.list--inline li {
+  padding: 0 1rem;
+  border-left: 1px solid #ccc;
+}
+
+.list.list--inline li span {
+  color: var(--alt-text);
+  margin-right: 0.25rem;
+}
+
+.list.list--inline li:first-child {
+  padding-left:0;
+  border-left: none;
+}
+
+.list.list--comma {
+  display: flex;
+  flex-wrap: wrap;
+  margin:0 0 1rem 0;
+  padding:0;
+  list-style: none;
+}
+
+.list.list--comma li {
+  margin:0 0.25rem 0 0;
+  padding:0;
+}
+
+.list.list--comma li:after {
+  content: ", "
+}
+
+.list.list--comma li:last-child:after {
+  content: ""
+}
+
 .links {
   margin: 0;
   padding: 0;

@@ -11,11 +11,9 @@ import Block from "../components/block"
 // product developer, interface designer, team leader
 
 const IndexPage = (props) => (
-  <Layout className="home">
+  <Layout className="page--home">
     <SEO title="home" />
-    <Section 
-      className="about" 
-    >
+    <Section>
       <div className="section__left">
         <PageOverview
           title="lane olson"

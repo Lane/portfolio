@@ -5,19 +5,38 @@ html, body {
   height: 100%;
 }
 
+a, a:visited {
+  color: var(--link);
+}
+
 @import "layout.css";
 @import "section.css";
-
 @import "links.css";
-
 @import "header.css";
 
 @import "organisms/page-overview.css";
 
 @import "pages/home.css";
+@import "pages/projects.css";
 
 .tl-edges {
   overflow: visible!important;
+}
+
+.callout {
+  padding: 1rem;
+  background: #f6f6f6;
+  font-size: 1rem;
+  border-left: 0.25rem solid #ccc;
+  margin: 0 0 2rem 0;
+}
+
+.callout .list {
+  margin:0;
+}
+
+.condensed {
+  font-family: var(--font-condensed);
 }
 
 .bigger {

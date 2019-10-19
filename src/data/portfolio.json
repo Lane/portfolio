@@ -1,371 +1,596 @@
 [
   {
     "name": "Educational Opportunity Project",
-    "summary": "",
+    "summary": "Created an interactive data visualization tool for exploring educational opportunity measures for counties, school districts, and schools across the United States. Users can explore three measures of educational opportunity and how they corelate with socioeconomic status and poverty.",
     "featured": true,
     "client": "Stanford University",
     "start": "2018-12-01",
     "end": "2019-10-01",
     "type": [ "Data Visualization", "Website" ],
-    "tasks": [ 
-      "UI Design",
-      "Information Design",
-      "User Testing",
-      "Prototype Development",
-      "Front-End Development",
-      "Back-End Development",
-      "Documentation",
-      "SEO",
-      "Data Processing",
-      "Analytics",
-      "Project Management"
+    "media": [
+      {
+        "type": "image",
+        "url": "https://placehold.it/960x540",
+        "title": "",
+        "description": ""
+      },
+      {
+        "type": "image",
+        "url": "https://placehold.it/960x540",
+        "title": "",
+        "description": ""
+      },
+      {
+        "type": "image",
+        "url": "https://placehold.it/960x540",
+        "title": "",
+        "description": ""
+      }
     ],
-    "technologies": [
-      "Google Analytics",
-      "Google Tag Manager",
-      "Google Search Console",
-      "Hugo",
-      "Algolia",
-      "Mapbox",
-      "React",
-      "Redux",
-      "Material UI",
-      "E-charts",
-      "D3",
-      "Atomic Design",
-      "HTML5",
-      "CSS",
-      "SVG",
-      "WCAG",
-      "Sentry",
-      "AWS CloudFront",
-      "AWS Elastic Container Service",
-      "AWS Lambda",
-      "Docker",
-      "git",
-      "GitHub",
-      "Notion",
-      "Node",
-      "npm",
-      "python",
-      "Pandas",
-      "Tippecanoe",
-      "GNU Make",
-      "csvkit",
-      "puppeteer",
-      "Vector Tiles",
-      "GeoJSON",
-      "Figma",
-      "Sketch"
+    "distribution": [
+      { 
+        "type": "Design",
+        "value": 0.3,
+        "tasks": [
+          "functional specification",
+          "user interface design",
+          "user experience design",
+          "wireframing",
+          "prototyping",
+          "component design",
+          "user testing"
+        ],
+        "technologies": [
+          "Atomic Design",
+          "Material Design Guidelines",
+          "Web Content Accessibility Guidelines",
+          "SVG",
+          "Figma"
+        ]
+      },
+      { 
+        "type": "Development",
+        "value": 0.5,
+        "tasks": [
+          "front-end development",
+          "data processing",
+          "analytics integration",
+          "a11y",
+          "search engine optimization"
+        ],
+        "technologies": [
+          "React",
+          "Redux",
+          "Material UI",
+          "Algolia",
+          "Mapbox",
+          "Hugo",
+          "E-charts",
+          "D3",
+          "Node.js",
+          "npm",
+          "python",
+          "Pandas",
+          "Tippecanoe",
+          "GNU Make",
+          "csvkit",
+          "puppeteer",
+          "GeoJSON",
+          "Google Analytics",
+          "Google Tag Manager"
+        ]
+      },
+      {
+        "type": "DevOps",
+        "value": 0.2,
+        "tasks": [
+          "infrastructure setup",
+          "devops",
+          "continuous integration"
+        ],
+        "technologies": [
+          "AWS CloudFront",
+          "AWS Elastic Container Service",
+          "AWS Lambda",
+          "Docker",
+          "Travis CI",
+          "git",
+          "GitHub"
+        ]
+      },
+      { 
+        "type": "Management",
+        "value": 0.1,
+        "tasks": [
+          "documentation",
+          "sprint planning",
+          "project timeline"
+        ],
+        "technologies": [
+          "GitHub",
+          "Notion",
+          "Google Search Console"
+        ]
+      }
     ]
   },
   {
     "name": "Blockchain Case Commons",
-    "summary": "",
+    "featured": false,
+    "summary": "As part of the <a href='https://www.coursera.org/specializations/blockchain-revolution-enterprise' target='_blank'>Blockchain Revolution for the Enterprise Specialization</a> offered through Coursera, I created this social platform where learners can share, discuss, and like use cases for blockchain.",
     "client": "Blockchain Research Institute",
     "start": "2018-12-01",
     "end": "2019-04-01",
     "type": [ "Web Application", "Social Platform" ],
-    "tasks": [ 
-      "UI Design",
-      "Front-End Development",
-      "Back-End Development",
-      "Documentation",
-      "Project Management"
-    ],
-    "technologies": [
-      "React",
-      "Redux",
-      "Material UI",
-      "Firebase",
-      "Google Safe Browsing API",
-      "HTML5",
-      "CSS",
-      "git",
-      "Bitbucket",
-      "Node",
-      "npm",
-      "Figma",
-      "Browserstack",
-      "Travis CI"
+    "distribution": [
+      { 
+        "type": "Design",
+        "value": 0.4,
+        "tasks": [
+          "user interface design",
+          "functional specification",
+          "wireframing",
+          "prototyping"
+        ],
+        "technologies": [
+          "HTML",
+          "CSS",
+          "Figma"
+        ]
+      },
+      { 
+        "type": "Development",
+        "value": 0.5,
+        "tasks": [
+          "front-end development",
+          "back-end development",
+          "user authentication",
+          "database storage"
+        ],
+        "technologies": [
+          "React",
+          "Redux",
+          "Firebase",
+          "Material UI",
+          "Google Safe Browsing API",
+          "Node",
+          "npm",
+          "Browserstack",
+          "git",
+          "BitBucket"
+        ]
+      },
+      { 
+        "type": "Management",
+        "value": 0.1,
+        "tasks": [
+          "issue tracking"
+        ],
+        "technologies": [
+          "JIRA",
+          "BitBucket"
+        ]
+      }
     ]
   },
   {
     "name": "Eviction Lab",
-    "summary": "",
+    "summary": "Worked as the technical lead to create maps, charts, and rankings for a national dataset of of over 60 million eviction records. Users can explore evictions, compare evictions, and view correlations between census data for states, counties, cities, tracts, and block groups. Project garnered attention from many media outlets including New York Times, NPR, and Democracy Now.",
     "featured": true,
     "client": "Princeton University",
     "start": "2017-08-15",
     "end": "2018-04-01",
     "type": [ "Data Visualization", "Website" ],
-    "tasks": [ 
-      "Front-End Development",
-      "Back-End Development",
-      "Documentation",
-      "Data Processing",
-      "Analytics",
-      "Project Management"
-    ],
-    "technologies": [
-      "Google Analytics",
-      "Google Tag Manager",
-      "Hugo",
-      "Mapbox",
-      "Angular",
-      "Bootstrap",
-      "D3",
-      "HTML5",
-      "CSS",
-      "SVG",
-      "WCAG",
-      "Sentry",
-      "AWS CloudFront",
-      "AWS Lambda",
-      "Docker",
-      "git",
-      "GitHub",
-      "Node",
-      "npm",
-      "python",
-      "Pandas",
-      "Tippecanoe",
-      "GNU Make",
-      "csvkit",
-      "Karma",
-      "Vector Tiles",
-      "GeoJSON",
-      "Sketch",
-      "InVision",
-      "BrowserStack",
-      "Travis CI",
-      "Netlify"
+    "distribution": [
+      { 
+        "type": "Design",
+        "value": 0.2,
+        "tasks": [
+          "functional specification",
+          "prototyping"
+        ],
+        "technologies": [
+          "HTML5",
+          "CSS",
+          "SVG",
+          "Sketch",
+          "InVision"
+        ]
+      },
+      { 
+        "type": "Development",
+        "value": 0.4,
+        "tasks": [
+          "front-end development",
+          "back-end development",
+          "data processing",
+          "analytics"
+        ],
+        "technologies": [
+          "Mapbox",
+          "Angular",
+          "D3",
+          "Bootstrap",
+          "Hugo",
+          "Node.js",
+          "Karma",
+          "npm",
+          "python",
+          "Pandas",
+          "csvkit",
+          "Tippecanoe",
+          "GNU Make",
+          "GeoJSON",
+          "Google Analytics",
+          "Google Tag Manager"
+        ]
+      },
+      { 
+        "type": "DevOps",
+        "value": 0.3,
+        "tasks": [
+          "error tracking",
+          "issue tracking"
+        ],
+        "technologies": [
+          "Docker",
+          "git",
+          "BrowserStack",
+          "Travis CI",
+          "Netlify",
+          "Sentry",
+          "Trello",
+          "AWS CloudFront",
+          "AWS Lambda",
+          "GitHub"
+        ]
+      },
+      { 
+        "type": "Management",
+        "value": 0.1,
+        "tasks": [
+          "gantt chart"
+        ],
+        "technologies": [
+          "Google Sheets"
+        ]
+      }
     ]
   },
   {
     "name": "Speak English Professionally",
-    "summary": "",
+    "summary": "Designed and developed a mobile app (iOS / Android) to help learners communicate in business and professional environments. Users can view lecture videos, engage in drag and drop exercises, practice pronounciation, and unlock achievements as they progress through the course.",
+    "featured": true,
     "client": "Georgia Institute of Technology",
     "start": "2017-09-01",
     "end": "2018-03-01",
     "type": [ "iOS App", "Android App" ],
-    "tasks": [ 
-      "Front-End Development",
-      "Mobile App Development",
-      "User Testing",
-      "Documentation",
-      "Analytics",
-      "Project Management"
-    ],
-    "technologies": [
-      "Google Analytics",
-      "Angular",
-      "Ionic",
-      "Material Design",
-      "HTML5",
-      "CSS",
-      "SVG",
-      "AWS CloudFront",
-      "git",
-      "Bitbucket",
-      "Cordova"
+    "distribution": [
+      { 
+        "type": "Design",
+        "value": 0,
+        "tasks": [
+          "wireframing",
+          "prototyping",
+          "mobile app design",
+          "user experience design",
+          "user testing"
+        ],
+        "technologies": [
+          "Material Design",
+          "HTML5",
+          "CSS",
+          "SVG",
+          "Sketch"
+        ]
+      },
+      { 
+        "type": "Development",
+        "value": 0,
+        "tasks": [
+          "video transcoding",
+          "front-end development",
+          "data management",
+          "analytics setup"
+        ],
+        "technologies": [
+          "Angular",
+          "Ionic",
+          "AWS CloudFront",
+          "AWS Elastic Transcode",
+          "git",
+          "Bitbucket",
+          "Cordova",
+          "Google Analytics"
+        ]
+      },
+      { 
+        "type": "Management",
+        "value": 0,
+        "tasks": [
+          "client relations",
+          "analytics report",
+          "project timeline"
+        ],
+        "technologies": [
+          "JIRA",
+          "Bitbucket"
+        ]
+      }
     ]
   },
   {
     "name": "Art Gallery Speaker Booth",
-    "summary": "",
+    "summary": "Designed and developed an iPad app for attendees of the art gallery to press a button and record their thoughts and feelings of the \"Past Imperfect\" exhibit.  Video responses were then automatically uploaded to YouTube for broadcast in the gallery and online.",
     "client": "Alberta Art Gallery",
-    "start": "2016-09-01",
-    "end": "2017-07-01",
+    "start": "2017-05-01",
+    "end": "2017-06-01",
     "type": [ "iOS App", "Mobile App" ],
-    "tasks": [ 
-      "Front-End Development",
-      "Mobile App Development",
-      "Analytics",
-      "Project Management"
-    ],
-    "technologies": [
-      "YouTube API",
-      "Angular",
-      "Ionic",
-      "HTML5",
-      "CSS",
-      "SVG",
-      "git",
-      "Bitbucket",
-      "Cordova"
+    "distribution": [
+      { 
+        "type": "Design",
+        "value": 0,
+        "tasks": [
+          "wireframing",
+          "mobile app design"
+        ],
+        "technologies": [
+          "Sketch"
+        ]
+      },
+      { 
+        "type": "Development",
+        "value": 0,
+        "tasks": [
+          "front-end development",
+          "mobile app development",
+          "analytics"
+        ],
+        "technologies": [
+          "YouTube API",
+          "Angular",
+          "Ionic",
+          "HTML5",
+          "CSS",
+          "SVG",
+          "git",
+          "Bitbucket",
+          "Cordova"
+        ]
+      }
     ]
   },
   {
     "name": "Mastering Spectroscopy",
-    "summary": "",
+    "summary": "Designed and developed a mobile app (iOS / Android) to help learners understand identifying compounds using infrared and nuclear magnetic resonance spectroscopy.  Users analyze spectroscopy graphs to identify compounds present within the substance, then assemble a molecule using the identified compounds.",
     "client": "University of Alberta",
     "start": "2016-09-01",
     "end": "2017-07-01",
     "type": [ "iOS App", "Android App", "Mobile App" ],
-    "tasks": [ 
-      "Front-End Development",
-      "Mobile App Development",
-      "User Testing",
-      "Documentation",
-      "Analytics",
-      "Project Management"
-    ],
-    "technologies": [
-      "Google Analytics",
-      "Angular",
-      "Ionic",
-      "D3",
-      "Material Design",
-      "HTML5",
-      "CSS",
-      "SVG",
-      "AWS CloudFront",
-      "git",
-      "Bitbucket",
-      "Cordova"
+    "distribution": [
+      { 
+        "type": "Design",
+        "value": 0,
+        "tasks": [ 
+          "Front-End Development",
+          "Mobile App Development",
+          "User Testing",
+          "Documentation",
+          "Analytics",
+          "Project Management"
+        ],
+        "technologies": [
+          "Google Analytics",
+          "Angular",
+          "Ionic",
+          "D3",
+          "Material Design",
+          "HTML5",
+          "CSS",
+          "SVG",
+          "AWS CloudFront",
+          "git",
+          "Bitbucket",
+          "Cordova"
+        ]
+      }
     ]
   },
   {
     "name": "Mountains 101",
-    "summary": "",
+    "featured": true,
+    "summary": "Created a series of interactive exercises for identifying mountain ranges around the world.  Users are presented with an interactive map with various outlines boundaries and they must match them to a provided list of mountain ranges.  Mountains 101 is currently <a href='https://www.folio.ca/u-of-as-mountains-101-tops-global-ranking-of-online-science-courses/' target='_blank'>ranked among the top online science courses</a> globally.",
     "client": "University of Alberta",
     "start": "2016-09-01",
     "end": "2017-07-01",
     "type": [ "Web Application", "Interactive Learning" ],
-    "tasks": [ 
-      "UI Design",
-      "Wireframing",
-      "User Prototypes",
-      "Front-End Development"
-    ],
-    "technologies": [
-      "Google Analytics",
-      "Angular",
-      "Material Design",
-      "HTML5",
-      "CSS",
-      "SVG",
-      "AWS CloudFront",
-      "git",
-      "Bitbucket",
-      "Mapbox",
-      "CesiumJS",
-      "GeoJSON"
+    "distribution": [
+      { 
+        "type": "Design",
+        "value": 0,
+        "tasks": [
+          "UI design",
+          "wireframing",
+          "prototyping"
+        ],
+        "technologies": [
+          "Material Design",
+          "HTML5",
+          "CSS",
+          "SVG"
+        ]
+      },
+      {
+        "type": "Development",
+        "value": 0,
+        "tasks": [
+          "front-end development"
+        ],
+        "technologies": [
+          "Google Analytics",
+          "Angular",
+          "AWS CloudFront",
+          "git",
+          "Bitbucket",
+          "Mapbox",
+          "CesiumJS",
+          "GeoJSON"
+        ]
+      }
     ]
   },
   {
     "name": "Indigenous Canada",
-    "summary": "",
+    "summary": "Created interactive exercises for exploring maps and paintings throughout the Indigenous Canada online course. This online course was recognized as the <a href='https://www.cbc.ca/news/canada/edmonton/indigenous-canada-university-alberta-course-mooc-1.4598119'>most popular online course in Canada</a> for 2017.",
     "featured": true,
     "client": "University of Alberta",
     "start": "2016-09-01",
     "end": "2017-07-01",
     "type": [ "Web Application", "Interactive Learning" ],
-    "tasks": [ 
-      "UI Design",
-      "Wireframing",
-      "Front-End Development"
-    ],
-    "technologies": [
-      "Google Analytics",
-      "Angular",
-      "Material Design",
-      "HTML5",
-      "CSS",
-      "SVG",
-      "AWS CloudFront",
-      "git",
-      "Bitbucket",
-      "Mapbox",
-      "GeoJSON"
-    ]
-  },
-  {
-    "name": "Planhandler",
-    "summary": "",
-    "client": "Onlea",
-    "start": "2016-09-01",
-    "end": "2017-07-01",
-    "type": [ "Web Application", "Interactive Learning" ],
-    "tasks": [ 
-      "UI Design",
-      "Wireframing",
-      "User Prototypes",
-      "Front-End Development",
-      "GeoJSON"
-    ],
-    "technologies": [
-      "Angular",
-      "Material Design",
-      "HTML5",
-      "CSS",
-      "SVG",
-      "AWS CloudFront",
-      "git",
-      "Bitbucket",
-      "Mapbox",
-      "GeoJSON"
-    ]
-  },
-  {
-    "name": "Software Project Management",
-    "summary": "",
-    "client": "University of Alberta",
-    "start": "2016-09-01",
-    "end": "2017-07-01",
-    "type": [ "Web Application", "Interactive Learning" ],
-    "tasks": [ 
-      "UI Design",
-      "Wireframing",
-      "User Prototypes",
-      "Front-End Development",
-      "GeoJSON"
-    ],
-    "technologies": [
-      "Angular",
-      "Material Design",
-      "HTML5",
-      "CSS",
-      "SVG",
-      "AWS CloudFront",
-      "git",
-      "Bitbucket",
-      "Mapbox",
-      "GeoJSON"
+    "distribution": [
+      { 
+        "type": "Design",
+        "value": 0,
+        "tasks": [ 
+          "UI design",
+          "wireframing"
+        ],
+        "technologies": [
+          "Google Analytics",
+          "Angular",
+          "Material Design",
+          "HTML5",
+          "CSS",
+          "SVG",
+          "AWS CloudFront",
+          "git",
+          "Bitbucket",
+          "Mapbox",
+          "GeoJSON"
+        ]
+      }
     ]
   },
   {
     "name": "Dino 101",
-    "summary": "",
+    "summary": "Created several interactive learning exercises for Dino 101 online course through Coursera.  Interactive exercises I created include an <a href='https://d396qusza40orc.cloudfront.net/dino101%2Ftimescale%2Ftimescale.html' target='_blank'>interactive visualization of the geologic timescale</a>, <a href='https://d396qusza40orc.cloudfront.net/dino101%2Fpuzzle%2Ftyrannosaurus-puzzlebox.html' target='_blank'>dinosaur bone assembly</a> puzzles, drag-and-drop matching, and <a href='http://interactive-learning-objects.onlea.org/phylogenetic-tree/' target='_blank'>phylogenetic tree explorer</a>.  Also designed and developed a mobile app (iOS / Android) to deliver the online course.",
     "featured": true,
     "client": "University of Alberta",
     "start": "2016-09-01",
     "end": "2017-07-01",
-    "type": [ "Web Application", "Interactive Learning" ],
-    "tasks": [ 
-
-    ],
-    "technologies": [
-      "D3"
+    "type": [ "Mobile App", "Learning Exercise" ],
+    "distribution": [
+      { 
+        "type": "Design",
+        "value": 0.25,
+        "tasks": [ 
+          "wireframing",
+          "UI design",
+          "UX design"
+        ],
+        "technologies": [
+          "Material Design",
+          "HTML5",
+          "CSS",
+          "SVG"
+        ]
+      },
+      { 
+        "type": "Front-End Development",
+        "value": 0.4,
+        "tasks": [ 
+          "mobile app development",
+          "front-end development"
+        ],
+        "technologies": [
+          "D3",
+          "Angular",
+          "Google Analytics",
+          "git"
+        ]
+      },
+      {
+        "type": "DevOps",
+        "value": 0.2,
+        "tasks": [
+          "video transcoding pipeline",
+          "continuous integration",
+          "continuous delivery"
+        ],
+        "technologies": [
+          "AWS CloudFront",
+          "AWS Elastic Transcode"
+        ]
+      },
+      { 
+        "type": "Mobile App Development",
+        "value": 0.2,
+        "tasks": [ 
+          "cordova plugin"
+        ],
+        "technologies": [
+          "xCode",
+          "Android Studio",
+          "Cordova",
+          "iTunes Connect",
+          "Google Play Store"
+        ]
+      },
+      {
+        "type": "Management",
+        "value": 0.1,
+        "tasks": [ 
+          "sprint planning",
+          "task distribution",
+          "project timelines",
+          "code reviews"
+        ],
+        "technologies": [
+          "BitBucket",
+          "JIRA"
+        ]
+      }
     ]
   },
   {
     "name": "University of Alberta Website",
     "featured": true,
-    "summary": "",
+    "summary": "Created a responsive redesign of the University of Alberta website including a design system of components and web style guide.  The design system is still in use after 6+ years.",
     "client": "University of Alberta",
-    "start": "2016-09-01",
-    "end": "2017-07-01",
+    "start": "2012-09-01",
+    "end": "2013-08-01",
     "type": [ 
-      "Mobile Application", 
-      "Web Application", 
-      "Interactive Learning" 
+      "Design System", "Responsive Website"
     ],
-    "tasks": [ 
-
-    ],
-    "technologies": [
-      "D3"
+    "distribution": [
+      { 
+        "type": "Design",
+        "value": 0.5,
+        "tasks": [ 
+          "wireframing",
+          "prototyping",
+          "design system",
+          "style guide"
+        ],
+        "technologies": [
+          "Adobe Fireworks",
+          "Adobe Photoshop"
+        ]
+      },
+      {
+        "type": "Front-End Development",
+        "value": 0.5,
+        "tasks": [
+          "front-end development"
+        ],
+        "technologies": [
+          "gulp",
+          "jQuery",
+          "bootstrap",
+          "HTML",
+          "CSS"
+        ]
+      }
     ]
   }
 ]

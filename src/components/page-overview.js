@@ -59,13 +59,17 @@ const PageOverview = ({ title, items, active, links=true, transitionStatus, ...r
     <Parent className="page-overview" pose={transitionStatus}>
       <h1>{ title }</h1>
       <div style={{position: 'relative'}}>
-        <div 
-          className='marker'
-          style={{
-            transform: `translateY(${activeIndex*100}%)`,
-            height: `${100/items.length}%`
-          }}
-        ><MarkerIcon /></div>
+        { activeIndex > -1 &&
+          <div 
+            className='marker'
+            style={{
+              transform: `translateY(${activeIndex*100}%)`,
+              height: `${100/items.length}%`
+            }}
+          >
+            <MarkerIcon />
+          </div>
+        }
         { links ?
             <ul className="links links--vertical">
               {
