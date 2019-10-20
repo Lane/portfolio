@@ -2,11 +2,13 @@ import React from "react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Section from "../components/section"
+import Section from "../components/molecules/section"
 import { Link } from "gatsby"
 import PageOverview from "../components/page-overview"
 import PageContent from "../components/page-content"
-import Block from "../components/block"
+import Block from "../components/atoms/block"
+import { Paragraph } from "../components/atoms/text"
+import List, { ListItem } from "../components/atoms/list"
 
 // product developer, interface designer, team leader
 
@@ -26,19 +28,19 @@ const IndexPage = (props) => (
 
         <PageContent transitionStatus={props.transitionStatus}>
           <Block id="home">
-            <p className="text bigger">I create accessible applications, <br />user interfaces, and design systems.</p>
-            <p className="text small">...but also, so much more! Take a look:</p>
-            <ul className="list">
-              <li>
+            <Paragraph size="bigger">I create accessible applications, <br />user interfaces, and design systems.</Paragraph>
+            <Paragraph>...but also, so much more! Take a look:</Paragraph>
+            <List>
+              <ListItem>
                 <Link to="/what-i-do">Read about <strong>what I do</strong> and how I can help with your project</Link>
-              </li>
-              <li>
+              </ListItem>
+              <ListItem>
                 <Link to="/projects">See the <strong>projects</strong> I have recently worked on</Link>
-              </li>
-              <li>
+              </ListItem>
+              <ListItem>
                 <Link to="/technologies">View the <strong>technologies</strong> and processes I use in my work</Link>
-              </li>
-            </ul>
+              </ListItem>
+            </List>
           </Block>
         </PageContent>
       </div>    

@@ -1,14 +1,43 @@
+
+.page-overview {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  flex-direction: column;
+}
+
+@media(min-width: 840px) {
+  .page-overview {
+    align-items: flex-end;
+  }
+}
+
+/** Section List */
+
+  .page-overview .list {
+    display: flex;
+  }
+
 .page-overview .marker {
+  display: none;
+}
+
+@media(min-width: 840px) {
+
+  .page-overview .marker {
   width: 0px;
   background: transparent;
   position: absolute;
   right: -12px;
   transition: transform 0.2s ease-in-out;
-}
+  }
 
-.page-overview .marker .icon {
+  .page-overview .marker .icon {
   width: 8px;
   height:12px;
   position:relative;
   top: -1px;
+  }
+
 }

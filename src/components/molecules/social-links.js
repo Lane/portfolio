@@ -1,19 +1,20 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import List, { ListItem } from '../atoms/list'
 
-const SocialLinks = props => {
+const SocialLinks = ({socials}) => {
   return (
-    <ul className="links links--social">
+    <List links className="list--social">
       {
-        socialMedia.map(({id, url}) =>
-          <li key={id}>
+        socials.map(({id, url}) =>
+          <ListItem key={id}>
             <a className="link" href={url} target="_blank" rel="noopener noreferrer">
               <SocialIcon className="icon" icon={id} />
             </a>
-          </li>
+          </ListItem>
         )
       }
-    </ul>
+    </List>
   )
 }
 

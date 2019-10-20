@@ -2,25 +2,12 @@ import React, { useState } from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Section from "../components/section"
+import Section from "../components/molecules/section"
 import PageOverview from "../components/page-overview"
 import PageContent from "../components/page-content"
-import Block from "../components/block"
 import slugify from 'slugify';
-import * as moment from 'moment';
-
-
-const getTasks = (distribution) => {
-  return distribution.reduce((acc, curr) => {
-    return [ ...acc, ...curr.tasks ]
-  }, [])
-}
-
-const getTechnologies = (distribution) => {
-  return distribution.reduce((acc, curr) => {
-    return [ ...acc, ...curr.technologies ]
-  }, [])
-}
+import Project from "../components/organisms/project"
+import { getLinks } from "../utils/selectors"
 
 const ProjectsPage = ({transitionStatus, data}) => {
   
@@ -31,11 +18,9 @@ const ProjectsPage = ({transitionStatus, data}) => {
     )
   )
 
-  const itemNames = items.map(
-    (n) => n.name
-  )
+  const links = getLinks(items.map((n) => n.name))
 
-  const [active, setActive] = useState(itemNames[0])
+  const [active, setActive] = useState(links[0].text)
   
   return (
     <Layout className="page--projects">
@@ -44,7 +29,7 @@ const ProjectsPage = ({transitionStatus, data}) => {
         <div className="section__left">
           <PageOverview
             title="projects"
-            items={itemNames}
+            links={links}
             active={active}
             transitionStatus={transitionStatus}
           />
@@ -54,50 +39,11 @@ const ProjectsPage = ({transitionStatus, data}) => {
           <PageContent transitionStatus={transitionStatus}>
             {
               items.map((item, i) => 
-                <Block
+                <Project
                   key={i}
-                  className="project"
-                  id={item.slug}
+                  data={item}
                   onEnter={() => setActive(item.name) }
-                >
-                  <div className="summary">
-                    <h2>{item.name}</h2>
-                    <ul className="list list--inline condensed">
-                      <li>
-                        <span>Client:</span>
-                        {item.client}
-                      </li>
-                      <li>
-                        <span>Launched:</span>
-                        {moment(item.end).format("MMMM YYYY")}</li>
-                    </ul>
-                    <p dangerouslySetInnerHTML={{'__html': item.summary}}></p>
-                  </div>
-                  <div className="details">
-
-                    <div className="callout">
-                      <p>Contributed to the following tasks in this project:</p>
-                      <ul className="list list--comma">
-                        {
-                          getTasks(item.distribution).map((task, i) => 
-                            <li key={i}>{task}</li>
-                          )
-                        }
-                      </ul>
-                    </div>
-                    
-                    <div className="callout">
-                      <p>Utilized the following languages, frameworks, tools, and technologies:</p>
-                      <ul className="list list--comma">
-                        {
-                          getTechnologies(item.distribution).map((tech, i) => 
-                            <li key={i}>{tech}</li>
-                          )
-                        }
-                      </ul>
-                    </div>
-                  </div>
-                </Block>
+                />
               )
             }
           </PageContent>

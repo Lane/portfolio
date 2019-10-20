@@ -2,12 +2,27 @@ import React, { useRef, useState } from 'react'
 import PropTypes from 'prop-types'
 import classNames from 'classnames'
 import { useScrollPosition } from '@n8tb1t/use-scroll-position';
-import { useWindowSize } from '../hooks/useWindowSize';
+import { useWindowSize } from '../../hooks/useWindowSize';
 
-const Block = ({
+const Block = React.forwardRef(({ className, ...rest }, ref) => {
+  return (
+    <div
+      ref={ref}
+      className={
+        classNames("block", className)
+      }
+      {...rest}
+    />
+  )
+})
+
+/**
+ * A container that triggers callbacks when
+ * entering / exiting the viewport
+ */
+export const ScrollBlock = ({
   id, 
-  className, 
-  children, 
+  className,
   onEnter, 
   onExit,
   enterOffset, 
@@ -43,29 +58,26 @@ const Block = ({
   }, [onEnter, blockEl, active], null, false, 200)
 
   return (
-    <div
+    <Block
       id={id}
       ref={blockEl}
       className={
         classNames(
-          "block", 
           className,
           { "block--active": active }
         )
-      } 
+      }
       {...rest}
-    >
-      { children }
-    </div>
+    />
   )
 }
 
-Block.defaultProps = {
+ScrollBlock.defaultProps = {
   enterOffset: 0.5,
   exitOffset: 0.5
 }
 
-Block.propTypes = {
+ScrollBlock.propTypes = {
   id: PropTypes.string.isRequired,
   className: PropTypes.string,
   onEnter: PropTypes.func,

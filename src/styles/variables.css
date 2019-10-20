@@ -8,6 +8,12 @@
   --padding: 1rem;
   --margin: 1.5rem;
   --unit: 0.5rem;
+  --shade: #eee;
+
+  --smaller: 0.75rem; /** 12px */
+  --small: 0.875rem; /** 14px */
+  --big: 1.125rem;
+  --bigger: 1.5rem;
 
   --font: "Roboto", sans-serif;
   --font-heading: "Domine", serif;
@@ -17,7 +23,7 @@
   --col2: 100%;
   --content-max: 920px;
 
-  --section-margin: 16px;
+  --section-margin: 1rem;
 
   --header-height: 5rem;
 }
@@ -44,11 +50,5 @@
     --col1: calc(50% - ((0.5 * var(--content-max)) - var(--col1-max)));
     --col2: calc(50% - ((0.5 * var(--content-max)) - var(--col2-max)));
     
-  }
-}
-
-@media(min-width: 1200px) {
-  html {
-    font: 112.5%/1.5 'Roboto',sans-serif;
   }
 }

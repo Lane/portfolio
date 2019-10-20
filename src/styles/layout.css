@@ -1,4 +1,3 @@
-
 .page {
   margin: auto;
   width: 100%;
@@ -7,9 +6,23 @@
   min-height: 100vh;
 }
 
-.page .page__header {
-  position: fixed;
-  height: var(--header-height);
+@media(min-width: 840px) {
+  .page > .header {
+    position: fixed;
+    height: var(--header-height);
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+}
+
+.page .section .section__left {
+  display: none;
+}
+
+@media(min-width: 840px) {
+  .page .section .section__left {
+    display: flex;
+  }
 }
 
 .page__main {

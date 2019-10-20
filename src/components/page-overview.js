@@ -1,12 +1,11 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import classNames from 'classnames'
 import posed from 'react-pose';
-import slugify from 'slugify';
-import ScrollLink from './scroll-link';
 import { useWindowSize } from '../hooks/useWindowSize';
-import { MarkerIcon } from './icons';
-
+import { MarkerIcon } from './atoms/icon';
+import { Title } from './atoms/text';
+import List from './atoms/list';
+import Navigation from './molecules/navigation';
 
 const Parent = posed.div({
   entering: {
@@ -38,13 +37,21 @@ const Item = posed.li({
   exited: { y: 20, opacity: 0 }
 });
 
-const PageOverview = ({ title, items, active, links=true, transitionStatus, ...rest}) => {
+const PageOverview = ({ 
+  title, 
+  items, 
+  active, 
+  links, 
+  children, 
+  transitionStatus, 
+  ...rest
+}) => {
   
   /** Use window size for scroll offset */
   const size = useWindowSize()
 
   /** Get the active block index for arrow placement */
-  const activeIndex = items.findIndex((item) => item === active)
+  const activeIndex = links && links.findIndex((link) => link.text === active)
   
   /** Set scroll options */
   const scrollOptions = {
@@ -57,48 +64,45 @@ const PageOverview = ({ title, items, active, links=true, transitionStatus, ...r
 
   return (
     <Parent className="page-overview" pose={transitionStatus}>
-      <h1>{ title }</h1>
+      <Title tag="h1">{ title }</Title>
       <div style={{position: 'relative'}}>
         { activeIndex > -1 &&
           <div 
             className='marker'
             style={{
               transform: `translateY(${activeIndex*100}%)`,
-              height: `${100/items.length}%`
+              height: `${100/links.length}%`
             }}
           >
             <MarkerIcon />
           </div>
         }
-        { links ?
-            <ul className="links links--vertical">
+        { 
+          links &&
+            <Navigation
+              links={links}
+              active={active}
+              ListItemComponent={Item}
+              ListProps={{ vertical: true }}
+              LinkProps={{
+                scroll: true,
+                scrollOptions
+              }}
+            />
+        }
+        {
+          items &&
+            <List vertical>
               {
                 items.map((item, i) =>
                   <Item key={i}>
-                    <ScrollLink 
-                      className={
-                        classNames(
-                          'link', 
-                          { 'link--active': active === item}
-                        )
-                      }
-                      options={scrollOptions}
-                      anchorId={slugify(item, { lower: true })}
-                    >
-                      {item}
-                    </ScrollLink>
+                    {item}
                   </Item>
                 )
               }
-            </ul> :
-            <ul className="list">
-            {
-              items.map((item, i) => 
-                <Item key={i}>{item}</Item>
-              )
-            }
-            </ul>
+            </List>
         }
+        { children }
       </div>
     </Parent>
   )
@@ -108,7 +112,12 @@ PageOverview.propTypes = {
   title: PropTypes.string,
   items: PropTypes.array,
   active: PropTypes.string,
-  links: PropTypes.bool,
+  links: PropTypes.arrayOf(
+    PropTypes.shape({
+      text: PropTypes.string,
+      url: PropTypes.string,
+    })
+  ),
   transitionStatus: PropTypes.string,
 }
 

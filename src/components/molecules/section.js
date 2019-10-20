@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { Title } from '../atoms/text'
 
 const Section = ({children, className, title, ...rest}) => {
   return (
@@ -8,7 +9,7 @@ const Section = ({children, className, title, ...rest}) => {
       {...rest}
     >
       <div className="section__content">
-        { title && <h2 className="section__title">{title}</h2> }
+        { title && <Title tag="h2">{title}</Title> }
         { children }
       </div>
     </section>

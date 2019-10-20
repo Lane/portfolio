@@ -1,0 +1,74 @@
+.text {
+  font-family: var(--font);
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/** Modifiers */
+
+  .text.text--heading {
+    font-family: var(--font-heading);
+  }
+
+  .text.text--alt {
+    font-family: var(--font-condensed);
+  }
+
+  .text.text--bold {
+    font-weight: 700;
+  }
+
+  .text.text--light {
+    font-weight: 300;
+  }
+
+  .text.text--italic {
+    font-style: italic;
+  }
+
+  .text.text--caps {
+    text-transform: uppercase;
+  }
+
+
+/** Sizing */
+
+  .text.text--bigger {
+    font-size: var(--bigger);
+  }
+
+  .text.text--big {
+    font-size: var(--big);
+  }
+
+  .text.text--small {
+    font-size: var(--small);
+  }
+
+  .text.text--smaller {
+    font-size: var(--smaller);
+  }
+
+  h1.text {
+    font-size: 2rem;
+  }
+
+  h2.text {
+    font-size: 1.5rem;
+  }
+
+  h3.text {
+    font-size: 1.333rem;
+  }
+
+  h4.text {
+    font-size: 1.125rem;
+  }
+
+  h5.text {
+    font-size: 1rem;
+  }
+  
+  h6.text {
+    font-size: 0.875rem;
+  }

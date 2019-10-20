@@ -2,11 +2,10 @@ import React from "react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Section from "../components/section"
-import { Link } from "gatsby"
+import Section from "../components/molecules/section"
 import PageOverview from "../components/page-overview"
 import PageContent from "../components/page-content"
-import Block from "../components/block"
+import Block from "../components/atoms/block"
 
 
 const HireMePage = (props) => (
