@@ -6,15 +6,18 @@
 
 /** Modifiers */
 
-  .text.text--heading {
+  .text.text--heading,
+  .text--heading {
     font-family: var(--font-heading);
   }
 
-  .text.text--alt {
+  .text.text--alt, 
+  .text--alt {
     font-family: var(--font-condensed);
   }
 
-  .text.text--bold {
+  .text.text--bold,
+  .text--bold {
     font-weight: 700;
   }
 
@@ -68,7 +71,7 @@
   h5.text {
     font-size: 1rem;
   }
-  
+
   h6.text {
     font-size: 0.875rem;
   }

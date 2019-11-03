@@ -2,10 +2,10 @@ import classNames from "classnames"
 import PropTypes from "prop-types"
 import React from "react"
 
-import { BackIcon } from './atoms/icon';
-import { Title } from "./atoms/text"
-import Link from "./atoms/link";
-import Navigation from "./molecules/navigation";
+import { BackIcon } from '../atoms/icon';
+import { Title } from "../atoms/text"
+import Link from "../atoms/link";
+import Navigation from "../molecules/navigation";
 
 const Header = ({ siteTitle, socialMedia, className }) => {
 

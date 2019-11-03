@@ -9,7 +9,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
-import Header from "./header"
+import Header from "./organisms/header"
 import "../styles/index.css"
 
 const Layout = ({ children, className, ...rest }) => {
@@ -35,8 +35,7 @@ const Layout = ({ children, className, ...rest }) => {
         socialMedia={data.site.siteMetadata.socialMedia}
       />
       <main className="page__main">{children}</main>
-      <footer className="page__footer">
-      </footer>
+      <footer className="page__footer"></footer>
     </div>
   )
 }
