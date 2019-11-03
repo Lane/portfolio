@@ -9,8 +9,8 @@
   position: sticky;
   top:-4.25rem;
   z-index:100;
-  background: #fff;
-  border-bottom: 1px solid var(--shade);
+  background: linear-gradient(30deg, rgba(255,255,2555,0.1) , #fff 56%);
+
 }
 
 /** Site Title **/

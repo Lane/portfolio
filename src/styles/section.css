@@ -12,6 +12,10 @@
 .section .title {
   margin-top: 1rem;
   margin-bottom: 1.5rem;
+  min-height: 3rem;
+  line-height:1.5;
+  display: flex;
+  align-items: center;
 }
 
 .section__content {
@@ -79,7 +83,7 @@
 
 @media(min-width: 840px) {
   .section .section__right {
-    position:absolute;
+    position:relative;
     right:0;
     top:0;
     bottom: 0;
@@ -97,7 +101,6 @@
 
 
 .section .section__right .page-content {
-  padding-top: 0.6rem;
   max-width: var(--col2-max);
 }
 

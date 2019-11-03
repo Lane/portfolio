@@ -1,4 +1,8 @@
 
+.page--home .header {
+  background: none;
+  border: none;
+}
 
 @media(max-width: 840px) {
   .page--home .page-overview .list {
@@ -37,8 +41,14 @@
   color: var(--link);
 }
 
-.page--home .text.bigger {
+.page--home .text.text--bigger {
+  margin-top: 1.5rem;
   max-width: 33rem;
+}
+
+.page--home .text.text--bigger + .text {
+  padding-top: 0.25rem;
+  margin-bottom: 0.75rem;
 }
 
 .page--home .section__right .list {
@@ -46,7 +56,7 @@
 }
 
 @media(min-width: 960px) {
-  .page--home .text.bigger br {
+  .page--home .text--bigger br {
     display: none;
   }
 }

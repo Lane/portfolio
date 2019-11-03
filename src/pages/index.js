@@ -20,7 +20,6 @@ const IndexPage = (props) => (
         <PageOverview
           title="lane olson"
           items={['product developer', 'interface designer', 'team leader' ]}
-          links={false}
           transitionStatus={props.transitionStatus}
         />
       </div>

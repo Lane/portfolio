@@ -56,7 +56,7 @@ const PageOverview = ({
   /** Set scroll options */
   const scrollOptions = {
     offset: size.width > 840 ? 
-      (-size.height / 2.57) : 
+      (-(56 + size.height * 0.33)) : 
       -80
     ,
     ease: 'inOutQuad',
