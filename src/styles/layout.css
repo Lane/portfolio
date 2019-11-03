@@ -6,8 +6,12 @@
   min-height: 100vh;
 }
 
+.gatsby-plugin-transition-link-portal {
+  width:100%;
+}
+
 @media(min-width: 840px) {
-  .page > .header {
+  .gatsby-plugin-transition-link-portal .header {
     position: fixed;
     top:0;
     height: var(--header-height);

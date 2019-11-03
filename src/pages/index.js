@@ -13,7 +13,7 @@ import List, { ListItem } from "../components/atoms/list"
 // product developer, interface designer, team leader
 
 const IndexPage = (props) => (
-  <Layout className="page--home">
+  <Layout transitionStatus={"home-" + props.transitionStatus} className="page--home">
     <SEO title="home" />
     <Section>
       <div className="section__left">

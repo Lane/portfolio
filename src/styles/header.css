@@ -36,7 +36,6 @@
 /** Back to Home Link */
 
   .header .link.link--home {
-    display: none;
   }
 
   @media(min-width: 840px) {
@@ -62,7 +61,6 @@
   }
 
   .header .link.link--home.link--active {
-    opacity:0;
   }
 
 /** Header Nav Links */
