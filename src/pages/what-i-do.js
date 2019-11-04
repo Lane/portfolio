@@ -19,12 +19,12 @@ const WhatIDoPage = ({transitionStatus}) => {
   const links = getLinks([
     'design', 
     'development', 
-    'management', 
+    'devops', 
     'consulting'
   ])
 
   return (
-    <Layout transitionStatus={transitionStatus} className="page--what-i-do">
+    <Layout page="what-i-do">
       <SEO title="what i do" />
       <Section>
         <div className="section__left">

@@ -23,7 +23,7 @@ const ProjectsPage = ({transitionStatus, data}) => {
   const [active, setActive] = useState(links[0].text)
   
   return (
-    <Layout transitionStatus={transitionStatus} className="page--projects">
+    <Layout page="projects">
       <SEO title="projects" />
       <Section className="projects">
         <div className="section__left">

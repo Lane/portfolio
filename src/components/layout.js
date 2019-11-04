@@ -7,13 +7,14 @@
 
 import React from "react"
 import PropTypes from "prop-types"
+import classNames from "classnames"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./organisms/header"
 import "../styles/index.css"
 import { TransitionPortal } from "gatsby-plugin-transition-link";
 
-const Layout = ({ children, className, transitionStatus, ...rest }) => {
+const Layout = ({ children, className, page, ...rest }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -29,13 +30,12 @@ const Layout = ({ children, className, transitionStatus, ...rest }) => {
   `)
 
   return (
-    <div className={"page " + className} {...rest}>
+    <div className={classNames("page", "page--" + page, className)} {...rest}>
       <TransitionPortal>
         <Header
           className="page__header"
           siteTitle={data.site.siteMetadata.title} 
           socialMedia={data.site.siteMetadata.socialMedia}
-          transitionStatus={transitionStatus}
         />
       </TransitionPortal>
       <main className="page__main">{children}</main>

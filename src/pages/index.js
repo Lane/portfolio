@@ -10,16 +10,15 @@ import Block from "../components/atoms/block"
 import { Paragraph } from "../components/atoms/text"
 import List, { ListItem } from "../components/atoms/list"
 
-// product developer, interface designer, team leader
 
 const IndexPage = (props) => (
-  <Layout transitionStatus={"home-" + props.transitionStatus} className="page--home">
+  <Layout page="home">
     <SEO title="home" />
     <Section>
       <div className="section__left">
         <PageOverview
           title="lane olson"
-          items={['product developer', 'interface designer', 'team leader' ]}
+          items={['product developer', 'interface designer' ]}
           transitionStatus={props.transitionStatus}
         />
       </div>
